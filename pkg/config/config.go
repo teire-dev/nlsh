@@ -40,7 +40,7 @@ temperature = 0.7
 # base_url = "http://localhost:11434/v1" # Uncomment for local models (Ollama, etc)
 
 [gemini]
-model = "gemini-2.0-flash"
+model = "gemini-3.6-flash"
 temperature = 0.7
 
 [safety]
@@ -97,7 +97,7 @@ func setDefaults(config *Config) {
 		config.OpenAI.Temperature = 0.7
 	}
 	if config.Gemini.Model == "" {
-		config.Gemini.Model = "gemini-2.0-flash"
+		config.Gemini.Model = "gemini-3.6-flash"
 	}
 	if config.Gemini.Temperature == 0 {
 		config.Gemini.Temperature = 0.7
